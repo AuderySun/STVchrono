@@ -1,8 +1,10 @@
 # STVchrono
 
-## Annotation file for the continual change captioning (image pair) task
+## Dataset annotation files
+
+### Continual Change Captioning (image pair)
 stvchrono_v1_continual-change-captioning_image-pair.json
 
-## Annotation file for the continual change captioning (image sequence) task
+### Continual Change Captioning (image sequence)
 
-## Annotation file for the change-aware sequential instance segmentation task
+### Change-aware Sequential Instance Segmentation 
