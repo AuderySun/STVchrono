@@ -11,6 +11,7 @@
   - file: stvchrono_v1_continual-change-captioning_image-sequence.json
 
 - Change-aware Sequential Instance Segmentation 
+  - file: stvchrono_v1_change-aware-sequential-instance-segmentation.json
 
 ## Accessing dataset images
 
