@@ -18,4 +18,5 @@
 python download_panorama_via_streetview_api.py
 ```
 
- 
+## Contact
+If you have any questions or concerns regarding the dataset, please contact throught qiu.yue@aist.go.jp and yanjun.son@aist.go.jp
