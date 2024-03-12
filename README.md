@@ -8,4 +8,6 @@
 
 - Continual Change Captioning (image sequence)
 
+  - file: stvchrono_v1_continual-change-captioning_image-sequence.json
+
 - Change-aware Sequential Instance Segmentation 
