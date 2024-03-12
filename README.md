@@ -15,7 +15,7 @@
 ## Accessing dataset images
 
 ```
-
+python download_panorama_via_streetview_api.py
 ```
 
  
