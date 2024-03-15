@@ -1,4 +1,7 @@
 # STVchrono
+Dataset of the paper:
+
+**The STVchrono Dataset: Towards Continuous Change Recognition in Time**
 
 ## Dataset annotation files
 
@@ -21,3 +24,11 @@ python download_panorama_via_streetview_api.py
 
 ## Contact
 If you have any questions or concerns regarding the dataset, please contact us at qiu.yue@aist.go.jp and yanjun.son@aist.go.jp
+
+
+## Citation
+
+If you use or discuss our STVchrono, please cite our paper:
+```
+
+```
