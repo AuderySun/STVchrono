@@ -9,15 +9,26 @@ Download through [Google Drive Link](https://drive.google.com/drive/folders/1CHX
 
 - Continual Change Captioning (image pair)
   - file: stvchrono_v1_continual-change-captioning_image-pair.json
-
+    
 - Continual Change Captioning (image sequence)
   - file: stvchrono_v1_continual-change-captioning_image-sequence.json
 
 - Change-aware Sequential Instance Segmentation 
   - file: stvchrono_v1_change-aware-sequential-instance-segmentation.json 
 
+### Data format:
+STVchrono includes three annotation files. Each files is structured in JSON format and divided into two main sections: `train` and `test`. Within these sections, the data are organized as follows:
+
+      city: The name of the city where the images were taken, indicating the geographical source of the images.
+      image_IDs: This is a list of the IDs for image series, with their order indicating their sequence. 
+                 These IDs are the panorama IDs on Google Street View, serving as unique identifiers to locate the corresponding panoramic images on Google Street View.
+      change_caption: This is a description of the trends and changes observed across the image sequence. The text describes change trendecy and comparative differences between images in the sequence (1 to 5).
+
+
 ## Accessing dataset images
 
+To download panoramas collected for STVchrono using the Google Street View API, you can use the provided Python script `download_panorama_via_streetview_api.py`. 
+Before running the script, ensure you have Python installed and have obtained a Google Street View API key, which is necessary for accessing the panoramas. 
 ```
 python download_panorama_via_streetview_api.py
 ```
