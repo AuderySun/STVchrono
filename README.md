@@ -20,9 +20,9 @@ Download through [Google Drive Link](https://drive.google.com/drive/folders/1CHX
 STVchrono includes three annotation files. Each files is structured in JSON format and divided into two main sections: `train` and `test`. Within these sections, the data are organized as follows:
 
       city: The name of the city where the images were taken, indicating the geographical source of the images.
-      image_IDs: This is a list of the IDs for image series, with their order indicating their sequence. 
+      image_IDs: This is a list of the IDs for the image series, with their order indicating their sequence. 
                  These IDs are the panorama IDs on Google Street View, serving as unique identifiers to locate the corresponding panoramic images on Google Street View.
-      change_caption: This is a description of the trends and changes observed across the image sequence. The text describes change trendecy and comparative differences between images in the sequence (1 to 5).
+      change_caption: This describes the trends and changes observed across the image sequence. The text describes change trends and comparative differences between images in the sequence (eg: 1 to 5) or image pairs (A and B).
 
 
 ## Accessing dataset images
