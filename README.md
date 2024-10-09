@@ -1,7 +1,5 @@
-# STVchrono
-Dataset of the CVPR 2024 paper:
-
-**The STVchrono Dataset: Towards Continuous Change Recognition in Time**
+# The STVchrono Dataset: Towards Continuous Change Recognition in Time
+Dataset of the CVPR 2024 paper STVchrono Dataset
 
 ## Dataset annotation files
 
