@@ -1,4 +1,5 @@
-# The STVchrono Dataset: Towards Continuous Change Recognition in Time
+# [[CVPR 2024] The STVchrono Dataset: Towards Continuous Change Recognition in Time](https://openaccess.thecvf.com/content/CVPR2024/papers/Sun_The_STVchrono_Dataset_Towards_Continuous_Change_Recognition_in_Time_CVPR_2024_paper.pdf)
+
 Dataset of the CVPR 2024 paper STVchrono Dataset
 
 ## Dataset annotation files
@@ -39,5 +40,11 @@ If you have any questions or concerns regarding the dataset, please contact us a
 
 If you use or discuss our STVchrono, please cite our paper:
 ```
-
+@inproceedings{inproceedings,
+author = {Sun, Yanjun and Yue, Qiu and Khan, Mariia and Matsuzawa, Fumiya and Iwata, Kenji},
+year = {2024},
+pages = {14111-14120},
+title = {The STVchrono Dataset: Towards Continuous Change Recognition in Time},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+}
 ```
