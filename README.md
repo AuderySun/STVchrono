@@ -5,9 +5,10 @@ Dataset of the CVPR 2024 paper STVchrono Dataset
 ## Dataset annotation files
 
 We have updated our STVchrono dataset using Mapillary data. Please download the latest version (stvchrono_based_mapillary.zip) from this repository.
+And you can also access the STVchrono dataset based on Google Street View from [here](https://drive.google.com/drive/folders/1CHXSSAh2C8RtSgeMnbem_7c9C5Uk6wTb).
+
 
 You can download the images from Mapillary using the image ID, which is saved in content.name. 
-
 Here is an example: 'LlY70YKk5onM1fsNga0KrA' and 'tpsBxjm7qB7kF1aYcQP7LA' are image IDs.
 ```
 "contents": [
@@ -25,17 +26,31 @@ Here is an example: 'LlY70YKk5onM1fsNga0KrA' and 'tpsBxjm7qB7kF1aYcQP7LA' are im
     }
 ]
 ```
-
+Here, `LlY70YKk5onM1fsNga0KrA` and `tpsBxjm7qB7kF1aYcQP7LA` are image IDs to retrieve images (Mapillary example).
+For Google Street View samples, the IDs in image_IDs represent panorama IDs.
 
 
 
 ### Data format:
-We will provide an update on the data format soon.
 
-      city: The name of the city where the images were taken, indicating the geographical source of the images.
-      image_IDs: This is a list of the IDs for the image series, with their order indicating their sequence. 
-                 These IDs are the panorama IDs on Google Street View, serving as unique identifiers to locate the corresponding panoramic images on Google Street View.
-      change_caption: This describes the trends and changes observed across the image sequence. The text describes change trends and comparative differences between images in the sequence (eg: 1 to 5) or image pairs (A and B).
+Each task in the dataset is structured as a JSON object with the following fields:
+
+- **id**: Unique identifier of the task.  
+- **name**: Path-like string indicating city and place.  
+- **status / externalStatus**: Workflow status (e.g., `completed`, `approved`).  
+- **contents**: List of images in the task.  
+  - `name`: Image filename, containing the **date** and **Mapillary image ID** (e.g., `2018-09-27_LlY70YKk5onM1fsNga0KrA.jpg`).  
+  - `url`: Direct download URL (may be empty if not provided).  
+  - `width`, `height`: Image resolution.  
+- **attributes**: List of annotated captions describing changes across the image sequence.  
+  - Each entry contains:
+    - `type`: Annotation type (`textarea`, `switch`, etc.).  
+    - `name`: Human-readable description (with both English and Japanese hints).  
+    - `key`: Unique key for this attribute.  
+    - `value`: **Change caption**, describing visual differences across images (e.g., “A building on the right of A is not visible in B.”).  
+- **tags**: Task labels for filtering and workflow (e.g., `Checked_QA`, `2images`).  
+- **assignee / reviewer / approver**: Annotation and review metadata.  
+- **timestamps**: `createdAt`, `updatedAt`. 
 
 
 ## Accessing dataset images
@@ -46,8 +61,10 @@ Before running the script, ensure you have Python installed and have obtained a 
 python download_panorama_via_streetview_api.py
 ```
 
+To download images collected from Mapillary, please refer to this [repo](https://github.com/Stefal/mapillary_download).
+
 ## Contact
-If you have any questions or concerns regarding the dataset, please contact us at qiu.yue@aist.go.jp and yanjun.son@aist.go.jp
+If you have any questions or concerns regarding the dataset, please get in touch with us at qiu.yue@aist.go.jp and yanjun.son@aist.go.jp
 
 
 ## Citation
