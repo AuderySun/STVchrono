@@ -5,8 +5,6 @@ Dataset of the CVPR 2024 paper STVchrono Dataset
 ## Dataset annotation files
 
 We have updated our STVchrono dataset using Mapillary data. Please download the latest version (stvchrono_based_mapillary.zip) from this repository.
-And you can also access the STVchrono dataset based on Google Street View from [here](https://drive.google.com/drive/folders/1CHXSSAh2C8RtSgeMnbem_7c9C5Uk6wTb).
-
 
 You can download the images from Mapillary using the image ID, which is saved in content.name. 
 Here is an example: 'LlY70YKk5onM1fsNga0KrA' and 'tpsBxjm7qB7kF1aYcQP7LA' are image IDs.
@@ -54,12 +52,6 @@ Each task in the dataset is structured as a JSON object with the following field
 
 
 ## Accessing dataset images
-
-To download panoramas collected for STVchrono using the Google Street View API, you can use the provided Python script `download_panorama_via_streetview_api.py`. 
-Before running the script, ensure you have Python installed and have obtained a Google Street View API key, which is necessary for accessing the panoramas. 
-```
-python download_panorama_via_streetview_api.py
-```
 
 To download images collected from Mapillary, please refer to this [repo](https://github.com/Stefal/mapillary_download).
 
