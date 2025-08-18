@@ -25,7 +25,6 @@ Here is an example: 'LlY70YKk5onM1fsNga0KrA' and 'tpsBxjm7qB7kF1aYcQP7LA' are im
 ]
 ```
 Here, `LlY70YKk5onM1fsNga0KrA` and `tpsBxjm7qB7kF1aYcQP7LA` are image IDs to retrieve images (Mapillary example).
-For Google Street View samples, the IDs in image_IDs represent panorama IDs.
 
 
 
